@@ -4,7 +4,7 @@ import {BrowserRouter, Switch, Route} from 'react-router-dom';
 import './index.css';
 import App from './App';
 import 'tachyons';
-import {robots} from './robots'
+// import {robots} from './robots'
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
