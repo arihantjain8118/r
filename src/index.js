@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import {BrowserRouter, Switch, Route} from 'react-router-dom';
 import './index.css';
 import App from './App';
 import 'tachyons';
@@ -9,7 +10,12 @@ import * as serviceWorker from './serviceWorker';
 ReactDOM.render(
   <React.StrictMode>
     <div>
-    <App robots={robots} />
+    <BrowserRouter>
+        <Switch>
+          <Route exact path = '/' component={App} />
+        </Switch>
+      </BrowserRouter>
+    {/* <App robots={robots} /> */}
     </div>
   </React.StrictMode>,
   document.getElementById('root')
