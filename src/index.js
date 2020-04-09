@@ -2,11 +2,15 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import 'tachyons';
+import {robots} from './robots'
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <div>
+    <App robots={robots} />
+    </div>
   </React.StrictMode>,
   document.getElementById('root')
 );
